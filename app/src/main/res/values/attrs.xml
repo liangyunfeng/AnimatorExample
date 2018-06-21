@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EggacheDisplayView">
+        <!--收起按钮布局-->
+        <attr name="collapse_layout" format="reference" />
+        <!--展开按钮布局-->
+        <attr name="expand_layout" format="reference" />
+        <!--子布局之间的距离-->
+        <attr name="btn_spacing" format="dimension" />
+        <!--在 loop 模式下点击 view 直接展开，List 模式下响应子 view 点击-->
+        <attr name="click_loop_to_expand" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LockView">
+        <attr name="speed" format="float" />
+        <attr name="showCoordinateLine" format="boolean" />
+        <attr name="lockColor" format="color" />
+        <attr name="lockSize" format="integer" />
+        <attr name="state" format="integer">
+            <enum name="lock" value="0"/>
+            <enum name="unlock" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

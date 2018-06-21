@@ -1,0 +1,35 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Circular View -->
+    <dimen name="circular_view_expand_height">363dp</dimen>
+    <dimen name="circular_list_layout_height">200dp</dimen>
+    <dimen name="circular_list_divider_margin_start">23dp</dimen>
+    <dimen name="circular_list_divider_margin_end">23dp</dimen>
+    <dimen name="circular_list_divider_height">0.5dp</dimen>
+    <dimen name="circular_list_view_margin_top">18dp</dimen>
+    <dimen name="circular_list_view_margin_left">26dp</dimen>
+    <dimen name="circular_list_view_margin_right">26dp</dimen>
+
+    <dimen name="circular_view_layout_background_height">350dp</dimen>
+
+    <dimen name="circular_bg_width">243dp</dimen>
+    <dimen name="circular_bg_height">243dp</dimen>
+
+    <dimen name="time_text_size">47dp</dimen>
+
+    <dimen name="grid_layout_margin_top_animator">-214dp</dimen>
+    <dimen name="grid_layout_from_height_animator">200dp</dimen>
+    <dimen name="grid_layout_to_height_animator">214dp</dimen>
+
+    <dimen name="circular_view_translateY_animator">-100dp</dimen>
+
+    <dimen name="circular_default_radius">125dp</dimen>
+    <dimen name="circular_touch_area">32dp</dimen>
+
+
+
+
+</resources>

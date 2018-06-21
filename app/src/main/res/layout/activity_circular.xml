@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/circular_bg"
+    android:fitsSystemWindows="true">
+
+    <!--
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:id="@+id/circular_view_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/circular_view_expand_height">
+            <com.github.liangyunfeng.animator.circularview.view.ClockCircularMorphingView
+                android:id="@+id/clock_circular_morphing_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </com.github.liangyunfeng.animator.circularview.view.ClockCircularMorphingView>
+            <View
+                android:id="@+id/arrow_up"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circular_ic_handler"
+                android:backgroundTint="@color/arrow_up_color"
+                android:alpha="0.7"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/grid_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/circular_list_layout_height"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circular_view_layout"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/circular_list_divider_height"
+                android:layout_marginStart="@dimen/circular_list_divider_margin_start"
+                android:layout_marginEnd="@dimen/circular_list_divider_margin_end"
+                android:background="@color/divider_color"
+                android:layout_alignParentTop="true"/>
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/circular_list_view_margin_left"
+                android:layout_marginRight="@dimen/circular_list_view_margin_right"
+                android:numColumns="4"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+            </GridView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
